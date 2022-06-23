@@ -255,6 +255,12 @@ table {
   }
 }
 
+@media (max-width: 491.98px) {
+  .header__logo {
+    padding-top: 5px;
+  }
+}
+
 .menu {
   position: fixed;
   right: -360px;
@@ -402,7 +408,7 @@ table {
   display: block;
   font-weight: 400;
   font-size: 96px;
-  line-height: 96px;
+  line-height: 1.1;
   text-align: center;
   color: #FFFFFF;
 }
