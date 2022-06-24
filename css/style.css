@@ -139,6 +139,7 @@ table {
   line-height: 48px;
   color: #FFFFFF;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .header__callback {
@@ -648,8 +649,11 @@ table {
 }
 
 @media (max-width: 492px) {
+  .about__title {
+    margin-top: 140px;
+  }
   .about__body {
-    margin-top: 22px;
+    margin-top: 42px;
   }
   .about__name {
     font-size: 28px;
@@ -663,6 +667,89 @@ table {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.cases {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background: url("../img/cases/cases-bg.jpg") center center/cover no-repeat;
+}
+
+.cases__cards {
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.cases__card {
+  grid-column: span 2;
+  border: 1px solid rgba(135, 135, 135, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.cases__card p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 118.75%;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 300px;
+}
+
+.plus {
+  font-family: 'Roboto';
+  font-size: 96px;
+}
+
+@media (max-width: 1200px) {
+  .cases__card {
+    grid-column: span 3;
+  }
+  .cases__card p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cases__card {
+    min-height: 300px;
+    grid-column: span 6;
+  }
+  .cases__card p {
+    font-size: 20px;
+  }
+  .cases .plus {
+    font-size: 64px;
+  }
+}
+
+.contacts {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background: url("../img/contacts/contacts-bg.jpg") center center/cover no-repeat;
 }
 
 .title {
@@ -688,7 +775,7 @@ table {
 
 @media (max-width: 491.98px) {
   .title {
-    font-size: 38px;
+    font-size: 42px;
   }
 }
 
@@ -705,4 +792,8 @@ body {
 
 .active-menu {
   right: 0;
+}
+
+.hide {
+  display: none;
 }
