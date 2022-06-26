@@ -391,6 +391,76 @@ table {
   margin-top: 30px;
 }
 
+@-webkit-keyframes TextAnimate {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+  }
+}
+
+@keyframes TextAnimate {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+  }
+}
+
+@-webkit-keyframes buttonAnimate {
+  0% {
+    background: rgba(217, 217, 217, 0);
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  100% {
+    background: white;
+  }
+}
+
+@keyframes buttonAnimate {
+  0% {
+    background: rgba(217, 217, 217, 0);
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  100% {
+    background: white;
+  }
+}
+
+@-webkit-keyframes buttonAnimate2 {
+  0% {
+    background: rgba(217, 217, 217, 0);
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  100% {
+    background: white;
+  }
+}
+
+@keyframes buttonAnimate2 {
+  0% {
+    background: rgba(217, 217, 217, 0);
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  100% {
+    background: white;
+  }
+}
+
 .promo {
   height: 100vh;
   width: 100vw;
@@ -406,6 +476,12 @@ table {
 }
 
 .promo__body h1 {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: TextAnimate;
+          animation-name: TextAnimate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   display: block;
   font-weight: 400;
   font-size: 96px;
@@ -464,8 +540,6 @@ table {
 }
 
 .promo__button:nth-child(1) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: buttonAnimate;
@@ -475,8 +549,6 @@ table {
 }
 
 .promo__button:nth-child(2) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: buttonAnimate2;
@@ -524,6 +596,7 @@ table {
 }
 
 .about {
+  padding-bottom: 100px;
   height: 100vh;
   width: 100vw;
   background-color: black;
@@ -598,6 +671,8 @@ table {
   max-width: 345px;
   width: 100%;
   height: auto;
+  -webkit-border-radius: 30%;
+          border-radius: 30%;
 }
 
 @media (max-width: 960px) {
@@ -625,11 +700,27 @@ table {
         -ms-flex: 0 1 390px;
             flex: 0 1 390px;
   }
-}
-
-@media (max-width: 600px) {
-  .about__avatar {
-    display: none;
+  .about__title {
+    margin-top: 140px;
+  }
+  .about__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+    margin-top: 40px;
+  }
+  .about__avatar img {
+    width: 170px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
   }
   .about__body {
     -webkit-box-pack: center;
@@ -763,19 +854,19 @@ table {
 
 @media (max-width: 960px) {
   .title {
-    font-size: 52px;
+    font-size: 58px;
   }
 }
 
 @media (max-width: 767.98px) {
   .title {
-    font-size: 48px;
+    font-size: 54px;
   }
 }
 
 @media (max-width: 491.98px) {
   .title {
-    font-size: 42px;
+    font-size: 48px;
   }
 }
 
