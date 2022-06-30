@@ -31,17 +31,31 @@
             <div class="menu__header">
                 <div class="menu-close">
                 </div>
-                <a href="#!" class="menu__title">ГЛАВНАЯ</a>
+                <a href="#firstPage" class="menu__title">ГЛАВНАЯ</a>
             </div>
-            <a href="#!" class="menu__link menu__link_about">ОБО МНЕ</a>
-            <a href="#!" class="menu__link menu__link_cases">ВЕРСТКА</a>
-            <a href="#!" class="menu__link menu__link_contacts">КОНТАКТЫ</a>
+            <a href="#secondPage" class="menu__link menu__link_about">ОБО МНЕ</a>
+            <a href="#thirdPage" class="menu__link menu__link_cases">ВЕРСТКА</a>
+            <a href="#lastPage" class="menu__link menu__link_contacts">КОНТАКТЫ</a>
         </nav>
 
             <div class="menu__footer">
                 <p class="menu__copyright">
                     © 2022 Disur
                 </p>
+                <div class="contacts__links">
+                    <a href="#!" class="contacts__link">
+                        <img src="img/contacts/phone-ico.svg" alt="">
+                        8-800-555-35-35
+                    </a>
+                    <a href="#!" class="contacts__link">
+                        <img src="img/contacts/mail-ico.svg" alt="">
+                        disurfl@bk.ru
+                    </a>
+                    <a href="#!" class="contacts__link">
+                        <img src="img/contacts/discort-ico.svg" alt="">
+                        BLM2020#5130
+                    </a>
+                </div>
                 <div class="menu__socials socials-menu">
                     <a href="" class="menu__social">
                         <img src="img/menu/telegram-icon.svg" alt="">
@@ -68,7 +82,7 @@
                 <h1>HTMl-ВЕРСТКА И РАЗРАБОТКА 
                     ИНТЕРАКТИВНЫХ ИНТЕРФЕЙСОВ</h1>
                 <div class="promo__buttons">
-                    <a href="#!" class="promo__button button button_first">КЕЙСЫ</a>
+                    <a href="#thirdPage" class="promo__button button button_first">КЕЙСЫ</a>
                     <a href="#!" class="promo__button button button_second">УСЛУГИ</a>
                 </div>
             </div>
@@ -107,39 +121,39 @@ quis, sem. Nulla consequat massa quis enim.
             <div class="cases__cards">
                 <div class="cases__card">
                     <p>Верстка
+                        лендинга
+                       “MasterTAO”</p>
+                    <img src="img/cases/card-bg-5.png" alt="">
+                </div>
+                <div class="cases__card">
+                    <p>Верстка
                         Интернет-магазина
-                       “Степан”</p>
-                    <img src="" alt="">
+                       “ProTrends”</p>
+                    <img src="img/cases/card-bg-1.png" alt="">
+                </div>
+                <div class="cases__card">
+                    <p>Верстка
+                        лендинга
+                       “ProfiDress”</p>
+                    <img src="img/cases/card-bg-2.png" alt="">
                 </div>
                 <div class="cases__card">
                     <p>Верстка
                         Интернет-магазина
                        “Степан”</p>
-                    <img src="" alt="">
+                    <img src="img/cases/card-bg-3.png" alt="">
+                </div>
+                <div class="cases__card">
+                    <p>Верстка
+                        лендинга
+                       “Airlavr”</p>
+                    <img src="img/cases/card-bg-4.png" alt="">
                 </div>
                 <div class="cases__card">
                     <p>Верстка
                         Интернет-магазина
                        “Степан”</p>
-                    <img src="" alt="">
-                </div>
-                <div class="cases__card">
-                    <p>Верстка
-                        Интернет-магазина
-                       “Степан”</p>
-                    <img src="" alt="">
-                </div>
-                <div class="cases__card">
-                    <p>Верстка
-                        Интернет-магазина
-                       “Степан”</p>
-                    <img src="" alt="">
-                </div>
-                <div class="cases__card">
-                    <p>Верстка
-                        Интернет-магазина
-                       “Степан”</p>
-                    <img src="" alt="">
+                    <img src="img/cases/card-bg-6.png" alt="">
                 </div>
                 <div class="cases__card plus">
                     +
@@ -149,7 +163,31 @@ quis, sem. Nulla consequat massa quis enim.
         </div>
 
         <div class="section contacts">
-            
+            <div class="container">
+                <h2 class="contacts__title title">
+                    НАПИШИТЕ МНЕ
+                </h2>
+                <div class="contacts__body">
+                    <form action="#" class="contacts__form">
+                        <input required type="text" placeholder="Имя *" name="name" class="contacts__name contacts__input">
+                        <input type="text" placeholder="Компания" name="company" class="contacts__company contacts__input">
+                        <input required type="text" placeholder="Email *" name="mail" class="contacts__mail contacts__input">
+                        <label class="file" for="fileImg">
+                            <input accept=".jpg, .png, .gif, .webp, .psd, .fig" id="fileImg" type="file" name="mail" class="contacts__file">
+                            <span class="file-text">Макет</span>
+                            <span class="file-img"></span>
+                        </label>
+                        <textarea placeholder="Описание" name="description" id="desc" class="contacts__desc" ></textarea>
+
+                        <label class="check option">
+                            <input checked type="checkbox" class="check__input">
+                            <span class="check__box"></span>
+                            Соглашаюсь с условиями <a href="#!">пользовательского соглашения</a>
+                        </label>
+                        <input class="contacts__button" type="submit" name="submit">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

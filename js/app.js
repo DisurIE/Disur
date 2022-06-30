@@ -28,7 +28,7 @@
                 document.querySelector('.bottom').classList.remove('hide'); 
             }
             if(index == 4){
-
+                document.querySelector('.bottom').classList.add('hide'); 
             }
 		}
         });
@@ -45,11 +45,11 @@
     links.addEventListener('click', e => {
         let target = e.target;
 
-        if(target.classList.contains('menu__title')){
-            $.fn.pagepiling.moveTo('1');
+        if(e.target.classList.contains('menu__title')){
+            $.fn.pagepiling.moveTo('firstPage');
         }
-        if(target.classList.contains('menu__link_about')){
-            $.fn.pagepiling.moveTo('2');
+        if(e.target.classList.contains('menu__link_about')){
+            $.fn.pagepiling.moveTo('secondPage');
         }
         if(target.classList.contains('menu__link_cases')){
             $.fn.pagepiling.moveTo('3');
