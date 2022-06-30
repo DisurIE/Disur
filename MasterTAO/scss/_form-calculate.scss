@@ -1,0 +1,26 @@
+.form-calculate{
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 124.5%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 626px;
+        margin-bottom: 62px;
+        span{
+            text-decoration-line: line-through;
+            color: #89C249;
+            margin-left: 20px;
+        }
+    }
+
+}
+@media (max-width: 820px){
+    .form-calculate{
+    &__title{
+        text-align: center;
+        margin: 0 auto 62px auto;
+    }
+    }
+  }

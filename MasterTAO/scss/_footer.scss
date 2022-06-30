@@ -1,0 +1,111 @@
+.footer{
+    min-height: 440px;
+    padding: 70px 0 50px 0;
+
+
+    &__decor{
+        width: 100%;
+        height: 2px;
+        background-color: #E58D35;
+        margin-bottom: 34px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    &__links{
+        flex: 0 1 263px;
+    }
+    &__link{
+        display: block;
+    }
+    &__socials{
+        display: flex;
+        justify-content: space-between;
+        width: 117px;
+    }
+    &__social{
+        width: 34px;
+        height: 34px;
+        &_inst{
+            background-image: url("../img/footer/inst.svg");
+        }
+        &_vk{
+            background-image: url("../img/footer/vk.svg");
+        }
+        &_tg{
+            background-image: url("../img/footer/tg.svg");
+        }
+    }
+
+    &__contacts{
+        flex: 0 1 706px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 146%;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+    }
+    &__nav-link{
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160.5%;
+        text-decoration-line: underline;
+        color: #85899C;
+        cursor: pointer;
+        text-decoration: solid bottom;
+    }
+}
+
+@media (max-width: 920px){
+    .footer{
+        &__content{
+            flex-direction: column;
+        }
+        &__link{
+            max-width: 270px;
+        }
+        &__title{
+            font-size: 16px;
+        }
+        &__contacts{
+            column-gap: 35px;
+            flex: 0 1 auto;
+        }
+    }
+}
+@media (max-width: 788px){
+    .footer{
+        &__logo{
+            margin-bottom: 30px;
+        }
+        &__content{
+            justify-content: center;
+        }
+        &__title{
+            font-size: 16px;
+        }
+        &__contacts{
+            display: none;
+        }
+        &__links{
+            margin: 0 auto;
+            flex: 0 0 auto;
+            max-width: 335px;
+            text-align: center;
+        }
+        &__socials{
+            margin: 20px auto 0 auto;
+        }
+    }
+}

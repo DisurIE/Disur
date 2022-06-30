@@ -1,0 +1,15 @@
+.delivery{
+    min-height: 795px;
+    padding: 100px 0;
+    .title__decor{
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 788px){
+    .delivery{
+        &__container{
+            max-width: 768;
+        }
+    }
+}

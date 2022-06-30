@@ -1,0 +1,45 @@
+.button{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 146%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 153px;
+    height: 50px;
+    background: #E58D35;
+    border-radius: 90px;
+    padding-top: 14px;
+    cursor: pointer;
+    &_transparent{
+        background-color: transparent;
+        border: 1px solid #E58D35;
+    }
+    &__cooperation{
+        text-decoration: none;
+        text-align: left;
+        padding-left: 33px;
+        padding-top: 22px;
+        margin-top: 37px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 146%;
+        height: 68px;
+        width: 243px;
+        background-color: #E58D35;
+        border-radius: 90px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 21px;
+            right: 20px;
+            width: 27px;
+            height: 27px;
+            background-image: url("../img/promo/arrow-right.svg");
+        }
+        &:active::after{
+            
+            right: 18px;
+        }
+    }
+}

@@ -470,7 +470,7 @@ table {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  background: url("../img/promo/promo-bg.jpg") center center/cover no-repeat;
+  background: url("../img/promo/promo-bg.webp") center center/cover no-repeat;
 }
 
 .promo__body {
@@ -605,7 +605,7 @@ table {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  background: url("../img/about/about-bg.jpg") center center/cover no-repeat;
+  background: url("../img/about/about-bg.webp") center center/cover no-repeat;
 }
 
 .about .pp-tableCell {
@@ -773,7 +773,7 @@ table {
   min-height: 100vh;
   width: 100vw;
   background-color: black;
-  background: url("../img/cases/cases-bg.jpg") center center/cover no-repeat;
+  background: url("../img/cases/cases-bg.webp") center center/cover no-repeat;
 }
 
 .cases__cards {
@@ -852,6 +852,7 @@ table {
   .cases__card {
     min-height: 300px;
     grid-column: span 6;
+    height: 232px;
   }
   .cases__card p {
     font-size: 20px;
@@ -863,7 +864,7 @@ table {
 
 .contacts {
   background-color: black;
-  background: url("../img/contacts/contacts-bg.jpg") center center/cover no-repeat;
+  background: url("../img/contacts/contacts-bg.webp") center center/cover no-repeat;
 }
 
 .contacts .container {
@@ -1098,6 +1099,9 @@ input:-webkit-autofill:focus {
 }
 
 @media (max-width: 492px) {
+  .contacts__title {
+    margin-bottom: 30px;
+  }
   .contacts__input {
     font-size: 22px;
   }

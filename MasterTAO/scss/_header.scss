@@ -1,0 +1,118 @@
+.header{
+        min-height: 100px;
+    padding: 25px 0;
+    z-index: 10;
+    background-color: #282B38;
+    position: fixed;
+    left: 50%; top: 0; /* Выводим в центре */
+    transform: translateX(-50%);
+    width: 100%;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        height: 50px;
+    }
+    &__submit{
+        padding-top: 16px;
+        text-align: center;
+        flex: 0 0 170px;
+        height: 50px;
+        background-color: #E58D35;
+        border: none;
+        border-radius: 90px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 146%;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__logo{
+        flex: 0 0 172px;
+        
+    }
+    &__nav{
+        flex: 0 0 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    &__link{
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 146%;
+    }
+}
+
+@media (max-width: 1200px){
+    .header{
+        &__nav{
+            flex: 0 0 500px;
+        }
+    }
+}
+@media (max-width: 920px){
+    .header{
+        .container{
+            max-width: 100%;
+        }
+        &__submit{
+            display: none;
+        }
+    }
+}
+@media (max-width: 700px){
+    .header{
+        &__container{
+            align-items: center;
+            position: relative;
+        }
+        &__nav{
+            transform: translateX(100%);
+            max-width: 100%;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 98px;
+            justify-content: start;
+            flex-direction: column;
+            height: 620px;
+            row-gap: 30px;
+            padding-top: 37px;
+            background-color:#363A4D;
+            z-index: 1000000000000;
+            padding-left: 0;
+            transition: all 0.8s;
+            :last-child{
+                margin-top: 20px;
+            }
+        }
+        &__link{
+            display: block;
+            font-size: 36px;
+            row-gap: 0px;
+        }
+        
+    }
+}
+@media (max-width: 492px){
+    .header{
+        &__container{
+            column-gap: 20px;
+        }
+        .container{
+            max-width: auto;
+            margin: 0 auto;
+        }
+    }
+}
+.active{
+    transform: translateX(0);
+}
+.hidden{
+    overflow: hidden;
+}

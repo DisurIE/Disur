@@ -1,0 +1,63 @@
+.form-questions{
+    max-width: 390px;
+    background: #363A4D;
+    box-shadow: 5px 15px 40px rgba(11, 15, 34, 0.32);
+    border-radius: 20px;
+    flex: 0 1 390px;
+    height: 555px;
+    padding: 38px 40px;
+    &__text{
+        display: block;
+        width: 310px;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        padding-left: 20px;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 126%;
+            color: #CBCBCB;
+        }
+        &:not(:last-child){
+        margin-bottom: 14px;
+        }
+        &:last-child{
+            margin-bottom: 26px;
+        }
+        &_textarea{
+            height: 70px;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 126%;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 126%;
+        color: #FFFFFF;
+        margin-bottom: 23px;
+    }
+    &__submit{
+        width: 310px;
+    }
+}
+
+@media (max-width: 920px){
+    .form-questions{
+        flex: 0 1 555px;
+    }
+     
+}
+@media (max-width: 492px){
+    .form-questions{
+        max-width: 375px;
+    }
+     
+}
