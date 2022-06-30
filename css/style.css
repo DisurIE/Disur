@@ -4,6 +4,7 @@
   src: local("Mistral"), url("../fonts/Mistral.eot?#iefix") format("embedded-opentype"), url("../fonts/Mistral.woff2") format("woff2"), url("../fonts/Mistral.woff") format("woff"), url("../fonts/Mistral.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -216,6 +217,8 @@ table {
 
 .bottom img {
   cursor: pointer;
+  width: 45px;
+  height: 32px;
 }
 
 .bottom p {
@@ -344,6 +347,11 @@ table {
   margin-left: auto;
   text-align: right;
   margin-bottom: 30px;
+}
+
+.menu__social {
+  width: 40px;
+  height: 40px;
 }
 
 .menu-close {
@@ -1036,6 +1044,12 @@ table {
   font-size: 24px;
   line-height: 133.33333%;
   color: #FFFFFF;
+}
+
+.contacts__link img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
 }
 
 .contacts__link:not(:last-child) {
