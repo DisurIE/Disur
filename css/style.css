@@ -478,7 +478,7 @@ table {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  background: url("../img/promo/promo-bg.webp") center center/cover no-repeat;
+  background: black url("../img/promo/promo-bg.webp") center center/cover no-repeat;
 }
 
 .promo__body {
