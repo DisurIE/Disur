@@ -1,0 +1,196 @@
+.card-report{
+    min-height: 260px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    position: relative;
+    &__info{
+        grid-column: span 4;
+        background: rgba(255, 255, 255, 0.15);
+        border: 0.5px solid rgba(255, 255, 255, 0.2);
+        padding: 63px 50px;
+        height: auto;
+        flex: none;
+    }
+    &__img{
+        display: none;
+    }
+    &__picture{
+        grid-column: span 8;
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 270px;
+        color: #FFFFFF;
+        margin-bottom: 26px;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &__arrow{
+        width: 334px;
+        height: 334px;
+        &_left{
+            position: absolute;
+            top: -55px;
+            left: -220px;
+        }
+        
+        &_right{
+            right: -220px;
+            position: absolute;
+            top: -55px;
+        }
+        &_bottom{
+            display: none;
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+@media (max-width: 1600px){
+    .card-report{
+        &__arrow{
+            display: none;
+        }
+    }
+}
+@media (max-width: 1270px){
+    .card-report{
+        min-height: 210px;
+        &__info{
+            padding: 31px 25px;
+        }
+        &__title{
+            font-size: 18px;
+        }
+        &__desc{
+            font-size: 14px;
+        }
+        &__arrow{
+            &_left{
+                position: absolute;
+                top: -95px;
+                left: -220px;
+            }
+            
+            &_right{
+                right: -220px;
+                position: absolute;
+                top: -55px;
+            }
+        }
+    }
+}
+@media (max-width: 1140px){
+    .card-report{
+        min-height: 210px;
+        &__info{
+            padding: 31px 20px;
+        }
+       
+    }
+}
+@media (max-width: 1024px){
+    .card-report{
+        &__info{
+            grid-column: span 12;
+            order: 0;
+        }
+       &__picture{
+            grid-column: span 12;
+            order: 1;
+       }
+       &__arrow{
+           width: 234px;
+           &_right{
+               top: -105px;
+               right: -160px;
+           }
+           &_left{
+               left: -160px;
+           }
+       }
+    }
+}
+
+@media (max-width: 768px){
+    .card-report{
+        grid-column: span 1;
+        column-gap: 0;
+
+        &__arrow{
+            display: none;
+        }
+        &__picture{
+            order: 0;
+            height: 130px;
+            img{
+                height: 130px;
+            }
+        }
+        &__info{
+            height: 220px;
+            order: 1;
+        }
+    }
+    
+}
+@media (max-width: 492px){
+    .card-report{
+       
+        &__img{
+            display: block;
+            width: 100%;
+            &_big{
+                display: none;
+            }
+        }
+        &__info{
+            height: 177px;
+            
+            padding: 0 14px;
+            padding-top: 24px;
+            padding-bottom: 33px;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 1.2;
+            color: #00E3E3;
+            margin-bottom: 12px;
+            max-width: 140px;
+        }
+        &__desc{
+            font-size: 12px;
+            line-height: 1.2;
+            max-width: 140px;
+        }
+        &__arrow{
+            &_bottom{
+                display: block;
+            }
+        }
+    }
+}

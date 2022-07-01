@@ -1,0 +1,150 @@
+.promo{
+    &__container{
+    padding-top: 160px;
+    min-height: 986px;
+    background: url('../img/promo/promo-bg.png') center right no-repeat;
+    padding-bottom: 200px;
+    z-index: -1;
+    }
+
+    &__title{
+        max-width: 670px;
+        margin-bottom: 56px;
+    }
+    &__desc{
+        max-width: 670px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #FFFFFF;
+        margin-bottom: 134px;
+    }
+    &__issue-btn{
+        max-width: 545px;
+        width: 100%;
+        border: 3px solid #00E3E3;
+        height: 89px;
+        background-image: linear-gradient(to right, #00E3E3 0, #00E3E3 60%, transparent 60%, transparent 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__sub{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #0E0605;
+    }
+    &__price{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #00E3E3;
+    }
+    &__qual{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1200px){
+    .promo{
+        &__container{
+            padding-left: 15px;
+            padding-right: 15px;
+            background-size: 400px auto;
+        }
+        &__title{
+            max-width: 530px;
+        }
+        &__desc{
+            font-size: 22px;
+            max-width: 530px;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .promo{
+        &__container{
+            background-size: 330px auto;
+            background-position-x: 110%;
+            min-height: 890px;
+        }
+        &__title{
+            max-width: 430px;
+            margin-bottom: 16px;
+        }
+        &__desc{
+            max-width: 430px;
+            font-size: 20px;
+            margin-bottom: 62px;
+        }
+        &__issue-btn{
+            padding: 0 15px;
+            max-width: 390px;
+            height: 69px;
+        }
+        &__sub{
+            font-size: 18px;
+        }
+        &__price{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 768px){
+    .promo{
+        &__container{
+            background-size: 230px auto;
+            min-height: 730px;
+            padding-bottom: 60px;
+        }
+    }
+}
+@media (max-width: 512px){
+    .promo{
+        &__container{
+            min-height: 470px;
+            padding-top: 60px;
+            background-size: 180px auto;
+            background-position-y: center;
+        }
+        &__title{
+            max-width: 260px;
+        }
+        &__desc{
+            font-size: 14px;
+            max-width: 260px;
+        }
+        &__issue-btn{
+            padding: 0 15px;
+            max-width: 290px;
+            height: 38px;
+        }
+        &__sub{
+            font-size: 12px;
+        }
+        &__price{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 390px){
+    .promo{
+        &__container{
+            min-height: 380px;
+            background-size: 124px auto;
+        }
+    }
+}

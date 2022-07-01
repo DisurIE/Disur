@@ -1,0 +1,28 @@
+.button{
+    display: block;
+    width: 326px;
+    height: 89px;
+    left: 375px;
+    top: 3567px;
+    background: #00E3E3;
+    border: 3px solid #00E3E3;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0E0605;
+    text-decoration: none;
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.05);
+    }
+    &:active{
+        padding-top: 4px;
+        background-color: #02bebe;
+    }
+}
+@media (max-width: 492px){
+}

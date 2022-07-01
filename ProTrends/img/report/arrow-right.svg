@@ -1,0 +1,68 @@
+<svg width="334" height="334" viewBox="0 0 334 334" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-group">
+<g filter="url(#filter0_f_510_128)">
+<circle cx="167" cy="167" r="67" fill="#44F4FF" fill-opacity="0.3"/>
+</g>
+<g filter="url(#filter1_f_510_128)" id="arrow">
+<path d="M178.568 185.569V242.137L235.137 185.569L178.568 129V185.569Z" fill="#00E3E3"/>
+<circle cx="149" cy="186" r="5" fill="#00E3E3"/>
+<circle cx="127" cy="186" r="5" fill="#00E3E3"/>
+<circle cx="105" cy="186" r="5" fill="#00E3E3"/>
+<path d="M149.5 186H211.5" stroke="#00E3E3" stroke-width="2"/>
+</g>
+<g id="arrow">
+<path d="M178.568 185.569V242.137L235.137 185.569L178.568 129V185.569Z" fill="#00E3E3"/>
+<circle cx="149" cy="186" r="5" fill="#00E3E3"/>
+<circle cx="127" cy="186" r="5" fill="#00E3E3"/>
+<circle cx="105" cy="186" r="5" fill="#00E3E3"/>
+<path d="M149.5 186H211.5" stroke="#00E3E3" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_f_510_128" x="0" y="0" width="334" height="334" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_510_128"/>
+</filter>
+<filter id="filter1_f_510_128" x="93" y="122" width="149.137" height="127.137" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3.5" result="effect1_foregroundBlur_510_128"/>
+</filter>
+
+<style>
+ #arrow path:nth-child(1){
+    animation-delay: -0.1s;
+}
+#arrow circle:nth-child(1){
+    animation-delay: 0.2s;
+}
+#arrow circle:nth-child(2){
+    animation-delay: -0.3s;
+}
+#arrow circle:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-right {
+    0% {
+         transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+#arrow-group.addAnimation #arrow {
+    animation: arrow-right 1s infinite linear;
+  }
+  </style>
+    <script>
+    (function () {
+    var myAnimeClick = document.getElementById('arrow-group');
+	  myAnimeClick.classList.toggle('addAnimation');
+	
+    }());
+ </script>
+</defs>
+</svg>

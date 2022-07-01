@@ -1,0 +1,113 @@
+.card-work{
+    width: 370px;
+    min-height: 412px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 12px rgba(38, 20, 41, 0.46);
+    padding: 144px 34px 90px 33px;
+    position: relative;
+    &__title{
+        display: flex;
+        margin-bottom: 23px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #FFFFFF;
+        max-width: 179px;
+    }
+    &__icon{
+        width: 70px;
+        height: 70px;
+    }
+    &__animate{
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 33px;
+    }
+    p{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 0;
+        left: 96px;
+        transform: translateY(-50%);
+    }
+    &__decor{
+        width: 302px;
+        height: 4px;
+        background: #00E3E3;
+        margin: 23px 0;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .lg{
+        left: 93px;
+    }
+}
+
+@media (max-width: 492px){
+    .card-work{
+        
+        width: 350px;
+        min-height: 170px;
+        padding: 20px;
+        &__animate{
+            width: 81px;
+            height: 79px;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        &__text{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            max-width: 165px;
+        }
+        &__icon{
+            width: 43px;
+        }
+        &__title{
+            justify-content: flex-end;
+            margin-bottom: 6px;
+            height: 56px;
+        }
+        &__decor{
+            max-width: 210px;
+            margin: 0 0 6px auto;
+        }
+        &__desc{
+            max-width: 210px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+            margin-left: auto;
+        }
+        p{
+            top: 50%;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            left: 52px;
+        }
+        .lg{
+            left: 50px;
+        }
+    }
+}

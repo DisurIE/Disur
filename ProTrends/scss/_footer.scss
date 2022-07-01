@@ -1,0 +1,33 @@
+.footer{
+    padding-bottom: 100px;
+    &__link{
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__decor{
+        max-width: 600px;
+        width: 100%;
+        height: 4px;
+        background: #00E3E3;
+        margin: 43px auto;
+
+    }
+}
+
+@media (max-width: 512px){
+    .footer{
+        &__link{
+            font-size: 10px;
+        }
+        &__decor{
+            max-width: 226px;
+            margin: 18px auto;
+            height: 2px;
+        }
+    }
+}
