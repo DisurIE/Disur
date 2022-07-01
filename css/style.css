@@ -260,8 +260,29 @@ table {
 }
 
 @media (max-width: 491.98px) {
+  .header {
+    padding: 20px;
+  }
   .header__logo {
     padding-top: 5px;
+  }
+  .header__callback {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  .header__callback a {
+    margin: auto;
+    height: 30px;
+  }
+  .header__callback a img {
+    margin-top: 5px;
+    width: 25px;
+    height: 20px;
+  }
+  .header .menu-icon {
+    margin-top: 10px;
   }
 }
 
@@ -349,7 +370,7 @@ table {
   margin-bottom: 30px;
 }
 
-.menu__social {
+.menu__social img {
   width: 40px;
   height: 40px;
 }
@@ -757,7 +778,7 @@ table {
 
 @media (max-width: 492px) {
   .about__title {
-    margin-top: 140px;
+    margin-top: 80px;
   }
   .about__body {
     margin-top: 42px;
@@ -1114,6 +1135,7 @@ input:-webkit-autofill:focus {
 
 @media (max-width: 492px) {
   .contacts__title {
+    margin-top: 80px;
     margin-bottom: 30px;
   }
   .contacts__input {

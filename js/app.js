@@ -30,6 +30,13 @@
             if(index == 4){
                 document.querySelector('.bottom').classList.add('hide'); 
             }
+            if (index == 2 || index == 3 || index == 4){
+                if(window.screen.width < 493){
+                    var par = document.querySelector('.header__logo');
+                    par.innerHTML = ' ';
+                    document.querySelector('.header__callback').classList.add('hide');
+                }
+            }
 		}
         });
     });
