@@ -1,0 +1,219 @@
+.promo{
+    padding-top: 125px;
+    min-height: 975px;
+    .container{
+        position: relative;
+    }
+    &__content{
+        max-width: 576px;
+    }
+    h1{
+        position: relative;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 1.12;
+        color: #A65E34;
+        max-width: 576px;
+        margin-bottom: 20px;
+        z-index: 3;
+    }
+    &__desc{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.33;
+        color: #000000;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+    &__subheader{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        color: #A65E34;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+    &__cards{
+        display: flex;
+        column-gap: 38px;
+        margin-bottom: 48px;
+        max-width: 370px;
+    }
+    &__info{
+        text-align: center;
+    }
+    &__label{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        max-width: 370px;
+        display: block;
+    }
+    &__phone{
+        max-width: 370px;
+        width: 100%;
+        height: 45px;
+        border: 1px solid #000000;
+        padding-left: 15px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.38;
+        color: black;
+        margin-top: 13px;
+        margin-bottom: 20px;
+        &::placeholder{
+            color: #757575;
+        }
+    }
+    &__button{
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+    form{
+        max-width: 370px;
+        display: block;
+    }
+    .swiper-button-prev{
+        background: url('../img/promo/arrow-left.svg') center center/cover no-repeat;
+        z-index: 1;
+        width: 39px;
+        height: 23px;
+        top: 387px;
+        left: 514px;
+        cursor: pointer;
+        &::after{
+            display: none;
+        }
+    }
+    .swiper-button-next{
+        background: url('../img/promo/arrow-right.svg') center center/cover no-repeat;
+        z-index: 1;
+        width: 39px;
+        height: 23px;
+        top: 387px;
+        right: 16px;
+        cursor: pointer;
+        &::after{
+            display: none;
+        }
+    }
+    .swiper-slide{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.swiper{
+    z-index: 0;
+    position: absolute;
+    right: 32px;
+    top: 0;
+    max-width: 654px;
+    width: 100%;
+    .swiper-pagination {
+        position: absolute;
+        bottom: 23px;
+        right: 50%;
+        transform: translateX(50%);
+        width: auto !important;
+        left: auto !important;
+        margin: 0;
+    }
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 70px;
+        height: 5px;
+        background: #A65E34;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 0;
+        color: transparent;
+        opacity: 1;
+        background: #C4C4C4;
+    }
+    .swiper-pagination-bullet-active {
+        background: $brown;
+    }
+}
+
+@media (max-width: 1050px){
+    .promo{
+        .swiper-button-prev{
+            display: none;
+        }
+        .swiper-button-next{
+            display: none;
+        }
+    }
+    .swiper{
+        margin-top: 30px;
+        position: static;
+    }
+}
+@media (max-width: 768px){
+    .promo{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width: 492px){
+    .promo{
+        padding-top: 0;
+        min-height: 861px;
+        .container{
+            padding: 0 33px;
+        }
+        h1{
+            font-size: 29px;
+            max-width: 355px;
+        }
+        h2{
+            font-size: 32.2882px;
+        }
+        p{
+            font-size: 14.5297px;
+        }
+        form{
+            max-width: 294px;
+        }
+        &__desc{
+            margin-bottom: 4px;
+        }
+        &__cards{
+            margin-bottom: 21px;
+        }
+        &__label{
+            font-size: 14.3027px;
+        }
+    }
+    .swiper{
+        margin-top: 16px;
+        height: 388px;
+        &-pagination{
+            display: none;
+        }
+    }
+}

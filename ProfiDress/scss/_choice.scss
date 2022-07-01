@@ -1,0 +1,188 @@
+.choice{
+    padding: 98px 0 71px 0;
+    .container{
+        padding: 0 15px;
+        position: relative;
+    }
+    &__title{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.18;
+        color: #000000;
+        margin-bottom: 11px;
+    }
+    &__subtitle{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.375;
+        color: #000000;
+        margin-bottom: 58px;
+    }
+    &__card{
+        margin: 0 15px;
+    }
+    .choice-swiper-button-prev{
+        background: url('../img/promo/arrow-left.svg') center center/cover no-repeat;
+        z-index: 1;
+        width: 39px;
+        height: 23px;
+        top: 427px;
+        left: -45px;
+        position: absolute;
+        cursor: pointer;
+        &::after{
+            display: none;
+        }
+    }
+    .choice-swiper-button-next{
+        background: url('../img/promo/arrow-right.svg') center center/cover no-repeat;
+        z-index: 1;
+        width: 39px;
+        height: 23px;
+        position: absolute;
+        top: 427px;
+        right: -45px;
+        cursor: pointer;
+        &::after{
+            display: none;
+        }
+    }
+}
+.choice-swiper{
+    overflow: hidden;
+    width: 100%;
+    .swiper-slide{
+        width: 300px;
+    }
+}
+.choice-swiper-pagination {
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: auto !important;
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 70px;
+        height: 5px;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 0;
+        color: transparent;
+        opacity: 1;
+        background: #C4C4C4;
+    }
+    .swiper-pagination-bullet-active {
+        background: #212121;
+    }
+}
+.card-choice{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    max-width: 270px;
+    &:hover{
+        box-shadow: (1px 2px 5px rgba(0, 0, 0, 0.75));
+    }
+    &__bg{
+    background-color: #EEEEEE;
+    max-width: 270px;
+    align-self: center;
+    margin-bottom: 20px;
+    img{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    }
+    &__title{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.38;
+        color: #000000;
+        margin-left: 35px;
+        margin-bottom: 16px;
+    }
+    &__price{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.38;
+        color: #000000;
+        margin-left: 35px;
+        margin-bottom: 16px;
+    }
+    &__button{
+        margin-left: 35px;
+    }
+}
+@media (max-width: 1270px){
+    .choice{
+        .choice-swiper-button-prev{
+            left: 10px;
+        }
+        .choice-swiper-button-next{
+            right: 10px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .choice{
+        &__title{
+            font-size: 40px;
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 492px){
+    .choice{
+        &__title{
+            font-size: 27px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 292px;
+        }
+        &__subtitle{
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 34px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 207px;
+        }
+        .choice-swiper-button-prev{
+            left: 33px;
+           width: 31px;
+           height: 18px;
+        }
+        .choice-swiper-button-next{
+            right: 33px;
+            width: 31px;
+           height: 18px;
+        }
+    }
+}
+@media (max-width: 415px){
+    .choice{
+        .choice-swiper-button-prev{
+            display: none;
+        }
+        .choice-swiper-button-next{
+            display: none;
+        }
+
+    }
+}

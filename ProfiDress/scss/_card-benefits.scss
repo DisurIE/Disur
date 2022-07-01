@@ -1,0 +1,35 @@
+.card-benefits{
+
+    &__img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+    }
+    &__title{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.13;
+        text-transform: uppercase;
+        color: #A65E34;
+        margin-bottom: 28px;
+    }
+    &__desc{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.35;
+        color: #000000;
+    }
+}
+
+@media (max-width: 768px){
+    .card-benefits{
+        max-width: 370px;
+        &__desc{
+            max-width: 362px;
+        }
+    }
+}

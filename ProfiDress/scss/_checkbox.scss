@@ -1,0 +1,51 @@
+.check{
+    display: block;
+    margin-left: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    max-width: 370px;
+    &__input{
+        position: absolute;
+        appearance: none;
+        &:checked + .check__box{
+            background: url('../img/promo/checked-icon.svg') center center/cover no-repeat;
+            background-size: 11px 11px;
+            border: 1px solid $brown;
+        }
+    }
+    a{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $brown;
+
+    }
+    &__box{
+        margin-top: 10px;
+        margin-left: -30px;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background: transparent;
+        border: 1px solid $brown;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+}
+@media (max-width: 492px){
+    .check{
+        font-size: 9.53513px;
+        a{
+            font-size: 9.53513px;
+        }
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,77 @@
+.wrapper-dropdown {
+    /* размер и позиция */
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 12px 15px;
+   
+    /* стили */
+    background: #eee;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+    li{
+        font-size: 14px;
+        padding-left: 15px;
+        a{
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+        }
+    }
+   }
+   
+   .wrapper-dropdown:after { /* небольшая стрелка */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: black transparent;
+   }
+   .wrapper-dropdown.active {
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+    color: black;
+   }
+   
+   .wrapper-dropdown.active:after {
+    border-color: black transparent;
+   }
+   .wrapper-dropdown .dropdown {
+       display: none;
+       position: absolute;
+       top: 50px;
+   }
+   .wrapper-dropdown.active .dropdown {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        max-height: 400px;
+        display: block;
+        background: #eee;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        left: -1px;
+        top: 33px;
+        border: 1px solid black;
+        border-top: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+   }
+
+@media (max-width: 768px){
+    .wrapper-dropdown{
+        height: 34px;
+        border: 1px solid black;
+        font-size: 12px;
+        color: black;
+        padding-top: 10px;
+    }
+}

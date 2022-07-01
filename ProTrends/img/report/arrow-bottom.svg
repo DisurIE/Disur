@@ -1,0 +1,36 @@
+<svg width="44" height="73" viewBox="0 0 44 53" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-group">
+<g id="arrow">
+<path d="M21.5685 30.6266L0 30.6266L21.5685 52.1951L43.1371 30.6266L21.5685 30.6266Z" fill="#00E3E3"/>
+<circle cx="21.4032" cy="19.3528" r="1.90641" transform="rotate(90 21.4032 19.3528)" fill="#00E3E3"/>
+<circle cx="21.4032" cy="10.9646" r="1.90641" transform="rotate(90 21.4032 10.9646)" fill="#00E3E3"/>
+<circle cx="21.4032" cy="2.57633" r="1.90641" transform="rotate(90 21.4032 2.57633)" fill="#00E3E3"/>
+<path d="M21.4023 19.5433L21.4023 43.1828" stroke="#00E3E3" stroke-width="2"/>
+</g>
+<defs>
+    <style>
+        @keyframes arrow-right {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(10px);
+
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        #arrow-group.addAnimation #arrow {
+        animation: arrow-right 1s infinite linear;
+        }
+    </style>
+
+    <script>
+        (function () {
+    var myAnimeClick = document.getElementById('arrow-group');
+	  myAnimeClick.classList.toggle('addAnimation');
+	
+    }());
+    </script>
+</defs>
+</svg>

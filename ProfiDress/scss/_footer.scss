@@ -1,0 +1,141 @@
+.footer{
+    padding: 0 15px;
+    padding-top: 86px;
+    min-height: 460px;
+    background-color: #EEEEEE;
+    position: relative;
+    padding-bottom: 78px;
+
+    &__title{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 58px;
+    }
+    &__widgets{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 100;
+    }
+    &__widget{
+        width: 64px;
+        height: 64px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        border-right: none;
+        cursor: pointer;
+        &-img{
+            width: 19px;
+            height: 19px;
+        }
+    }
+    form{
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+    &__inputs{
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        row-gap: 30px;
+    }
+    &__input{
+        max-width: 400px;
+        width: 100%;
+        &-text{
+            border: none;
+            background-color: #EEE;
+            border-bottom: 1px solid #aaa;
+            max-width: 400px;
+            width: 100%;
+            display: block;
+            outline: none;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.25;
+            padding-left: 15px;
+            color: #000000;
+            display: block;
+            &::placeholder{
+                color: #111;
+            }
+        }
+    }
+    .check{
+        height: 25px;
+        padding-top: 30px;
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: 10px;
+        max-width: 470px;
+        transform: translateX(50px);
+        a{
+            color: black;
+            font-size: 14px;
+        }
+    }
+    .check__box{
+        width: 25px;
+        height: 25px;
+        border-radius: 0;
+        border-color: black;
+        margin-top: -3px;
+        margin-left: -40px;
+    }
+    .check__input{
+        &:checked + .check__box{
+            background: url('../img/footer/checked.svg') center center/cover no-repeat;
+            background-size: 22px 22px;
+            border: 1px solid black;
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .footer{
+        &__widgets{
+            bottom: 20px;
+            top: auto;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .footer{
+        &__inputs{
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 900px){
+    .footer{
+        
+    }
+}
+@media (max-width: 768px){
+    .footer{
+        &__input{
+            &-text{
+                border: 1px solid #aaa;
+                height: 35px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 492px){
+    .footer{
+        &__widgets{
+            display: none;
+        }
+    }
+}

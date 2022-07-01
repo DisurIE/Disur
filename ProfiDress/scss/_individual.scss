@@ -1,0 +1,76 @@
+.individual{
+    padding-bottom: 80px;
+    .container{
+        padding: 0 15px;
+    }
+    &__title{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.14;
+        max-width: 764px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    &__cards{
+        display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+    &__card{
+        max-width: 270px;
+    }
+}
+.card-individual{
+
+    &__title{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 55px;
+        color: #A65E34;
+        margin-bottom: 11px;
+    }
+    &__img{
+        margin-bottom: 15px;
+    }
+    &__desc{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        &:not(:last-child){
+            margin-bottom: 22px;
+        }
+    }
+}
+
+@media (max-width: 820px){
+    .individual{
+        &__cards{
+            justify-content: space-around;
+            column-gap: 20px
+        }
+        &__title{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 492px){
+    .individual{
+
+        &__title{
+            font-size: 26px;
+        }
+        &__card{
+            text-align: center;
+        }
+    }
+}

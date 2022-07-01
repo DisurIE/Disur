@@ -1,0 +1,32 @@
+.header{
+    padding: 30px 0;
+    min-height: 58px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #A65E34;
+        text-decoration: none;
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+}
+
+@media (max-width: 492px){
+    .header{
+        .container{
+            padding: 0 33px;
+        }
+    }
+}
