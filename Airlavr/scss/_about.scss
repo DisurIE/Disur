@@ -1,0 +1,203 @@
+.about{
+    background: linear-gradient(to right, #FAF153 50%, #68E6FC 50%);
+    z-index: 0;
+    min-height: 783px;
+    padding-top: 36px;
+   
+
+    td{
+        border: 1px solid #5818A4;
+        padding-top: 12px;
+        padding-left: 9px;
+        p{
+            color: #5818A4;
+            &:not(:last-child){
+                margin-bottom: 9px;
+            }
+        }
+    }
+    tr{
+        
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    &__img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    &__content{
+        display: flex;
+        column-gap: 42px;
+        &_hover{
+            column-gap: 42px;
+            display: none;
+        }
+    }
+    &__cards{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        p{
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 45px;
+            color: #5818A4;
+        }
+    }
+    &__card_hover{
+        p{
+            color: white;
+        }
+    }
+    &__button{
+        margin-top: 20px;
+        text-decoration: none;
+        &:hover{
+            background: linear-gradient(91.73deg, #6E00FF 42.96%, rgba(109, 53, 183, 0) 385.54%);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+    &__title{
+        max-width: 524px;
+    }
+    &__title_hover{
+        color: white;
+    }
+    &__spheres{
+        flex: 0 1 558px;
+    }
+    table{
+        margin-top: 22px;
+        border: 1px solid #5818A4;
+        width: 569px;
+        height: 184px;
+    }
+
+    td{
+        border: 1px solid #5818A4;
+        padding-top: 12px;
+        padding-left: 9px;
+        p{
+            color: #5818A4;
+            &:not(:last-child){
+                margin-bottom: 9px;
+            }
+        }
+    }
+    tr{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    &__img{
+        max-width: 100%;
+        height: auto;
+    }
+    &_hover{
+        background: linear-gradient(to right, #139B17 50%, #5818A4 50%);
+        table{
+        margin-top: 22px;
+        border: 1px solid #ffffff;
+        width: 569px;
+        height: 184px;
+        border-collapse: collapse;
+        }
+        tbody{
+            border: 1px solid #ffffff;
+        }
+        td{
+            border: 1px solid #6418A4;
+            padding-top: 12px;
+            padding-left: 9px;
+            p{
+                color: #ffffff;
+                &:not(:last-child){
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .about{
+        padding-bottom: 22px;
+       table{
+           width: 430px;
+       }
+
+    }
+}
+
+@media (max-width: 900px){
+    .about{
+        background: linear-gradient(to bottom, #FAF153 50%, #68E6FC 50%);
+       &__content{
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+           row-gap: 50px;
+       }
+       &__spheres{
+        flex: 0 1 auto;
+        }
+        table{
+            margin: 22px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 492px){
+    .about{
+        background: linear-gradient(to bottom, #FAF153 53%, #68E6FC 47%);
+        &__button{
+            margin-top: 20px;
+        }
+        &__title{
+            text-align: center;
+        }
+        table{
+            max-width: 280px;
+            width: 100%;
+        }
+        tr{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        tbody{
+            max-width: 280px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 390px){
+    .about{
+        background: linear-gradient(to bottom, #FAF153 55%, #68E6FC 45%);
+        &__card{
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 344px){
+    .about{
+        background: linear-gradient(to bottom, #FAF153 58%, #68E6FC 42%);
+       
+    }
+}
+.visible{
+    display: flex;
+}
+.hide{
+    display: none;
+}

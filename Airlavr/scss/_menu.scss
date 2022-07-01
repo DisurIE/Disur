@@ -1,0 +1,42 @@
+.menu-icon{
+    display: none;
+    position: relative;
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 17px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+    z-index: 101;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 8%;
+        background: wheat;
+        position: absolute;
+        top: 0;
+    }
+    span{
+        content: "";
+        width: 100%;
+        height: 8%;
+        background: wheat;
+        position: absolute;
+        bottom: 45%;
+        
+    }
+    &::after{
+        content: "";
+        width: 100%;
+        height: 8%;
+        background: wheat;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media (max-width: 900px){
+    .menu-icon{
+    display: block;
+    }
+}

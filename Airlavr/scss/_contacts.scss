@@ -1,0 +1,104 @@
+.contacts{
+    &__social{
+        display: flex;
+        width: 126px;
+        justify-content: space-between;
+        img{
+            height: 36px;
+            width: 36px;
+        }
+    }
+    &__phone{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;   
+        text-decoration: none;    
+        display: flex;
+        align-items: center;
+        img{
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &__mail{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;   
+        text-decoration: none;    
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 5px;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #FFFFFF;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .contacts{
+        &__nav{
+            a{
+            font-size: 16px;
+            }
+        }
+        &__mail{
+            font-size: 20px;
+        }
+        &__phone{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 900px){
+    .contacts{
+        &__nav{
+            flex-direction: column;
+            align-items: center;
+            order: 0;
+            row-gap: 60px;
+            padding-top: 90px;
+            padding-bottom: 20px;
+            padding-right: 15px;
+            a{
+                font-size: 60px;
+            }
+        }
+        &__social{
+            width: 315px;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}
+@media (max-width: 492px){
+    .contacts{
+        &__nav{
+            row-gap: 30px;
+            a{
+                font-size: 30px;
+            }
+        }
+        &__social{
+            width: 240px;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

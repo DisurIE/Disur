@@ -1,0 +1,21 @@
+.title{
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 66px;
+    color: #081612;
+    &_wh{
+        color: #DFF5EF;
+    }
+}
+h3{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    color: #5818A4;
+}
+
+@media (max-width: 492px){
+    h3{
+        font-size: 28px;
+    }
+}
