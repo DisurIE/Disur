@@ -146,7 +146,7 @@
                 return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
             }
 
-            const formImage = document.getElementById('fileImage');
+            const formImage = document.getElementById('fileImg');
 
             formImage.addEventListener('change', () => {
                 uploadFile(formImage.files[0]);
