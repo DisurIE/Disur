@@ -84,7 +84,7 @@
 
                 if(error === 0){
                     form.classList.add('_sending');
-                    let response = await fetch('sendmail.php', {
+                    let response = await fetch('../sendmail.php', {
                         method: 'POST',
                         body: formData
                     });
